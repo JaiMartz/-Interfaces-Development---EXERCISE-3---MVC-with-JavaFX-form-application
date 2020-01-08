@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="tablaFormulario.vistaController">
+    <children>
+      <HBox fx:id="btnGuardar" prefHeight="440.0" prefWidth="280.0">
+          <fx:include fx:id="vistNotas" source="../notasFormulario/Notas_vista.fxml" />
+      </HBox>
+      <TableView fx:id="tableNotas" layoutX="350.0" layoutY="20.0" prefHeight="384.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="tbcDNI" prefWidth="110" text="DNI" />
+          <TableColumn fx:id="tbcModulo" prefWidth="75" text="Modulo" />
+            <TableColumn fx:id="tbcNota" prefWidth="60" text="Nota" />
+            <TableColumn fx:id="tbcRecu" prefWidth="82" text="Recuperacion" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
